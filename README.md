@@ -37,6 +37,7 @@ If problems persist, delete the `node_modules/` folder and reinstall all the dep
 Ensure that the above steps are then followed, including resetting cache.
 
 Possible known bugs (dependency):
+
 - @babel/core
 - @babel/runtime
 
