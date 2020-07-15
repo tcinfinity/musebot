@@ -1,4 +1,4 @@
-# MuseNet v1
+# MuseBot
 
 ## Introduction
 
@@ -24,7 +24,6 @@ cd ..
 react-native run-ios
 ```
 
-____
 
 If errors occur, try clearing `react-native`  cache by running:
 
@@ -32,5 +31,15 @@ If errors occur, try clearing `react-native`  cache by running:
 react-native run-ios -- --reset-cache
 ```
 
-If more problems persist, deleted the `node_modules/` folder and reinstalling all the dependecies by regenerating the model dependencies again. \\
-Ensure that the above steps are then followed.
+____
+
+If problems persist, delete the `node_modules/` folder and reinstall all the dependencies again using `npm install`. \\
+Ensure that the above steps are then followed, including resetting cache.
+
+Possible known bugs (dependency):
+- @babel/core
+- @babel/runtime
+
+To fix specific dependency errors, try `npm install --update <dependency>`. \\
+If errors remain, completely reinstall the module by deleting it (individually; or grouped - see above) \\
+Remember to update the pod files and reset cache as shown above.
